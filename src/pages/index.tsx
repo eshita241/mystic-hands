@@ -4,9 +4,10 @@ import About from "./Components/About";
 import Login from "./Components/Login";
 import SignIn from "./Components/SignIn";
 import HybridScroll from "./Components/HybridScroll";
-import ProductDisplay from "./Components/Products1";
-import Products from "./Components/Products2";
-import ProductDis from "./Components/Products3";
+import Product1 from "./Components/Products1";
+import Product2 from "./Components/Products2";
+import Product3 from "./Components/Products3";
+
 
 
 export default function Home() {
@@ -16,9 +17,10 @@ export default function Home() {
       <Hero/>
       <About/>
       <HybridScroll>
-        <ProductDisplay/>
-        <Products/>
-        <ProductDis/>
+        <Product1/>
+        <Product2/>
+        <Product3/>
+
       </HybridScroll>
       <SignIn/>
       <Login/>
