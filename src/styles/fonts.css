@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Righteous';
+    src: url('/fonts/Righteous-Regular.ttf') format('truetype');
+}
+
+@font-face{
+  font-family: 'Franchise';
+    src: url('/fonts/Franchise.ttf') format('truetype');
+}
