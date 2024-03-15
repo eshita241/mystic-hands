@@ -14,8 +14,8 @@ const Login:React.FC = () => {
             <div className='flex'>
                 <NavBar color="#B2C8B8" textColor='#214646'/>
             </div>
-            <div className='flex'>
-                <div className='bg-[#F3DBAF] w-[40%]'>
+            <div className='flex relative'>
+                <div className='bg-[#F3DBAF] w-[50%]'>
                     <div className='pt-28'>
                     <h1 className=' font-Franchise text-[#214638] text-7xl text-center'> Sign into </h1>
                     </div>
@@ -46,7 +46,17 @@ const Login:React.FC = () => {
                     </form>
                     
                 </div>
-                <div className='bg-[#214638] w-[60%]'>
+                
+                <div className='bg-[#214638] w-[50%]'>
+                <div className='absolute flex px-4 w-[20rem] h-[26rem] inset-x-[60.9rem] inset-y-[8.5rem] bg-[#B2C8B8] z-10 rounded-md shadow-[12px_15px_0px_-1px_rgb(235,166,62)] shadow-[#EBA63E]'>
+                <div className='flex flex-col justify-center'>
+                    <h1 className='text-[#214638] font-Franchise flex justify-center text-5xl'>Hello Bro!</h1>
+                    <p className='text-[#214638] text-xl text-center font-Righteous pt-5 pb-4'> delectus inventore alias eligendi, eos aperiam explicabo dignissimos illum dolorem iusto placeat.</p>
+                    <div className='flex justify-center mt-3'>
+                    <button type="submit" className='text-[#F3DBAF] bg-[#214638] flex justify-center py-2 rounded-3xl px-3 font-Righteous w-44'> Sign Up</button>
+                    </div>
+                    </div>
+                </div>
                     <Image
                     src={Design}
                     alt="sjdv"

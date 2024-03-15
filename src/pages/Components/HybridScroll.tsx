@@ -1,12 +1,12 @@
 "use client";
-import React, { useRef, useEffect, ReactNode } from 'react';
+import React, { useRef, useEffect } from 'react';
 import Image from 'next/image';
 
-interface HybridScrollProps{
-  children: any;
+interface HybridScrollProps {
+  children: React.ReactNode;
 }
 
-const HybridScroll: React.FC<HybridScrollProps> = ({children}) => {
+const HybridScroll: React.FC<HybridScrollProps> = ({ children }) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
 
@@ -37,19 +37,19 @@ const HybridScroll: React.FC<HybridScrollProps> = ({children}) => {
   }, []);
 
   return (
-    <div 
-      ref={containerRef}  // Hides both x and y overflow
-      style={{ 
-        width: '100vw', 
-        height: '100vh', 
-        overflowX: 'auto', 
-        overflowY:'hidden',// Allow horizontal scrolling
+    <div
+      ref={containerRef}
+      style={{
+        width: '100vw',
+        height: '100vh',
+        overflowX: 'hidden', // Hide horizontal scrollbar
+        overflowY: 'hidden', // Allow vertical scrolling
       }}
     >
       <div ref={contentRef} className="flex" style={{ width: 'max-content' }}>
         {children}
-     </div>
-     </div>
+      </div>
+    </div>
   );
 };
 

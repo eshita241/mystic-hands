@@ -1,10 +1,9 @@
 import React from 'react';
 import Image from 'next/image';
 import Image1 from '/public/Group 9.png';
-import pot1 from '/public/pot1.png';
-import pot2 from '/public/pot2.png';
-import pot3 from '/public/pot3.png';
-import pot4 from '/public/pot4.png';
+import pot1 from '/public/gp1.png';
+import pot2 from '/public/gp.png';
+import pot3 from '/public/gp2.png';
 
 const Product3:React.FC = () => {
     return (
@@ -14,7 +13,7 @@ const Product3:React.FC = () => {
                 src={Image1}
                 alt="abc"
                 />
-                <h1 className='bg-[#542C35] text-[#F7CBAD] flex items-center font-Franchise flex-wrap px-4 text-3xl rounded-md'>A Glimpse of the pottery products</h1>
+                <h1 className='bg-[#542C35] text-[#F7CBAD] flex items-center font-Franchise flex-wrap px-4 text-3xl rounded-md'>A Glimpse of the handicraft products.</h1>
                 <Image
                 src={Image1}
                 alt="abc"
@@ -27,7 +26,7 @@ const Product3:React.FC = () => {
                     <Image
                 src={pot1}
                 alt="shv"
-                className=' h-44 w-44'
+                className=' h-44 w-44 border-8 rounded-lg border-[#214638]'
                 />
                 <h1 className='bg-[#214638] text-[#F7CBAD] flex items-center h-20 w-20 justify-center rounded-md shadow-[12px_15px_0px_-1px_rgb(235,166,62)] shadow-[#EBA63E]'>$4</h1>
                     </div>
@@ -35,7 +34,7 @@ const Product3:React.FC = () => {
                     <Image
                 src={pot2}
                 alt="shv"
-                className=' h-44 w-44 rounded-lg'
+                className=' h-44 w-44 border-8 rounded-lg border-[#214638]'
                 />
                  <h1 className='bg-[#214638] text-[#F7CBAD] flex items-center h-20 w-20 justify-center rounded-md shadow-[12px_15px_0px_-1px_rgb(235,166,62)] shadow-[#EBA63E]'>$4</h1>
                     </div>
@@ -50,16 +49,16 @@ const Product3:React.FC = () => {
                     <Image
                 src={pot3}
                 alt="shv"
-                className=' h-44 w-44'
+                className=' h-44 w-44 border-8 rounded-lg border-[#214638]'
                 />
                 
                     </div>
                     <div className='flex items-center gap-7'>
                     <h1 className='bg-[#214638] text-[#F7CBAD] flex items-center h-20 w-20 justify-center rounded-md shadow-[12px_15px_0px_-1px_rgb(235,166,62)] shadow-[#EBA63E]'>$4</h1>
                     <Image
-                src={pot4}
+                src={pot1}
                 alt="shv"
-                className=' h-44 w-44 rounded-lg'
+                className=' h-44 w-44 border-8 rounded-lg border-[#214638]'
                 />
                 
                     </div>
